@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle task-runner",
+        "command": "task-runner:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "task-runner",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "task-runner:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

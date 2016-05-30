@@ -1,0 +1,32 @@
+{
+  "name": "task-runner",
+  "main": "./lib/task-runner",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [],
+  "repository": "https://github.com/atom/task-runner",
+  "license": "MIT",
+  "providedServices": {
+    "taskRunner": {
+      "description": "",
+      "versions": {
+        "1.0.0": "provideTaskRunner"
+      }
+    }
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "react-for-atom": "^15.0.2-0",
+    "redux": "^3.5.2"
+  }
+}

@@ -1,0 +1,47 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.task-runner {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  .task-runner-panel {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;;
+    align-items: stretch;
+    line-height: 10px;
+  }
+  .task-state-panel {
+
+  }
+  .tasks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .task {
+    border: solid 1px @background-color-warning;
+    border-radius: 5%;
+    padding: 5px;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: @background-color-highlight;
+    }
+    .name {
+      text-align: center;
+    }
+  }
+}
